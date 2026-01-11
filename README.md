@@ -61,31 +61,31 @@ Aplikasi ini bertujuan untuk membantu pengelolaan data anggota, relawan, serta p
 ---
 
 ## 🖼️ Screenshot Aplikasi
-                                                                                                 
-<div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center">
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:24px;"> <!-- LOGIN --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
 
-<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/login.jpeg?raw=true"
-     width="250"
-     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/login.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
 
-<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menudrop.jpeg?raw=true"
-     width="250"
-     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+<h3 align="center">🔐 Halaman Login</h3> <p align="center"> Halaman autentikasi pengguna untuk memastikan hanya anggota organisasi yang memiliki hak akses dapat menggunakan aplikasi SIAMOR. </p> </div> <!-- DASHBOARD --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
 
-<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menukta%2Bdescription.jpeg?raw=true"
-     width="250"
-     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/dashboard.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
 
-<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menuprofil.jpeg?raw=true"
-     width="250"
-     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+<h3 align="center">🏠 Dashboard Utama</h3> <p align="center"> Dashboard sebagai pusat informasi yang menampilkan menu utama serta ringkasan fitur dalam aplikasi SIAMOR. </p> </div> <!-- MENU DROPDOWN --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
 
-<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/dataorganisasi.jpeg?raw=true"
-     width="250"
-     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menudrop.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
 
-</div>
+<h3 align="center">📂 Menu Dropdown</h3> <p align="center"> Menu navigasi tambahan untuk mempermudah pengguna mengakses fitur-fitur penting secara cepat dan efisien. </p> </div> <!-- KTA --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
 
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menukta%2Bdescription.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
+
+<h3 align="center">🪪 Kartu Tanda Anggota</h3> <p align="center"> Menampilkan Kartu Tanda Anggota (KTA) digital beserta deskripsi lengkap data anggota organisasi mahasiswa. </p> </div> <!-- PROFIL --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menuprofil.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
+
+<h3 align="center">👤 Menu Profil</h3> <p align="center"> Fitur pengelolaan data profil pengguna, memungkinkan anggota memperbarui dan melihat informasi pribadi mereka. </p> </div> <!-- DATA ORGANISASI --> <div style=" border:2px solid #cfd8dc; border-radius:18px; padding:14px; background:#fafafa; box-shadow:0 8px 20px rgba(0,0,0,.18); ">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/dataorganisasi.jpeg?raw=true" style=" width:100%; border-radius:14px; border:3px solid #ffffff; box-shadow: inset 0 0 0 1px #b0bec5; ">
+
+<h3 align="center">🏢 Data Organisasi</h3> <p align="center"> Menampilkan data administrasi organisasi mahasiswa secara terstruktur, termasuk informasi kepengurusan dan identitas organisasi. </p> </div> </div>
 
 > 📂 **Catatan:** Screenshot aplikasi secara lengkap dapat dilihat pada folder **Add File** yang tersedia di repository.
 
