@@ -1,42 +1,124 @@
-1. Identitas
-   - Nama: Dion Vernanda
-   - NIM: 2304411498
-   - Kelas: 5k gab 3 rpl
-        - Nama: Putu Wirayanta
-        - NIM: 2304411457
-        - Kelas: 5k gab 3 rpl
+# 📱 Aplikasi Sistem Informasi Organisasi PMI (SIAMOR_PMI)
 
-2. Tema aplikasi
-   - Tema aplikasi: Aplikasi Sistem Informasi Organisasi PMI( Palang Merah Indonesia)
-   - Aplikasi rujukan dari Play Store:
-     - Nama aplikasi: SIAMO 
-     - Link Play Store: https://play.google.com/store/apps/details?id=id.or.pmi.siamo
+---
 
-3. Fitur yang dibuat (gunakan checklist dropdown)
-   - pada menu input KTA Menampilkan agama, provinsi, kabupaten, jenis kelamin
-   - tanggal lahir menggunakan kalender
-   - golongan darah
-   - 
-4. Screenshot aplikasi
-    <img src="Screenshots/menuregister.jpeg" width="200">
-    <img src="Screenshots/login.jpeg" width="200">
-    <img src="Screenshots/dashboar.jpeg" width="200">
-    <img src="Screenshots/menukta+description.jpeg" width="200">
-    <img src="Screenshots/menudrop.jpeg" width="200">
-    <img src="Screenshots/menuprofil.jpeg" width="200">
-    <img src="Screenshots/menuprofil2.jpeg" width="200">
- 
+## 👤 Identitas Pengembang
 
-5. Cara menjalankan aplikasi
-   - Clone repository
-   - Buka project di Android Studio
-   - Jalankan aplikasi di emulator atau device
+| Nama               | NIM        | Kelas        |
+| ------------------ | ---------- | ------------ |
+| **Dion Vernanda**  | 2304411498 | 5K Gab 3 RPL |
+| **Putu Wirayanta** | 2304411457 | 5K Gab 3 RPL |
 
-     Jika Menjalankan aplikasi langsung di android,
-     a. buka SIAMOR_PMI, setelah itu akan ditampilkan menu login,
-     b. Di menu login ada pilihan login dengan google dan buat akun
-     c. setelah membuat akun baru barulah bisa login dan langsung terintegrasi ke dashboard
-     d. di menu dashboard terdapat beberapa menu yaitu menu anggota/relawan, data organisasi, pelaporan kegiatan, profil pengguna, dan membuat karttu tanda anggota untuk PMI
-     e. di menu profil pengguna kalian bisa membuat dan mengganti profil sesuai yang kalian inginkan
-     f. di menu pembuatan KTA kalian bisa membuat kartu tanda anggota dengan mengisi data yang telah disediakan, dan bisa dicetak, namun pada aplikasi ini belum maksimal karena saya masih pemula.
-     
+> *Sebelumnya kami mohon maaf apabila aplikasi yang kami buat masih jauh dari kata sempurna. Aplikasi ini dibuat sebagai sarana pembelajaran dan pengembangan kemampuan kami.* 🙏
+
+---
+
+## 🎯 Tema Aplikasi
+
+**Aplikasi Sistem Informasi Organisasi PMI (Palang Merah Indonesia)**
+Aplikasi ini bertujuan untuk membantu pengelolaan data anggota, relawan, serta pembuatan **Kartu Tanda Anggota (KTA)** secara digital.
+
+### 🔗 Aplikasi Rujukan
+
+* **Nama Aplikasi**: SIAMO
+* **Link Play Store**: [https://play.google.com/store/apps/details?id=id.or.pmi.siamo](https://play.google.com/store/apps/details?id=id.or.pmi.siamo)
+
+---
+
+## ✨ Fitur Aplikasi
+
+<details>
+<summary><strong>📌 Menu Input KTA</strong></summary>
+
+* Dropdown **Agama**
+* Dropdown **Provinsi**
+* Dropdown **Kabupaten**
+* Dropdown **Jenis Kelamin**
+* Input **Tanggal Lahir** menggunakan kalender
+* Pilihan **Golongan Darah**
+
+</details>
+
+<details>
+<summary><strong>📊 Dashboard</strong></summary>
+
+* Data Anggota / Relawan
+* Data Organisasi
+* Pelaporan Kegiatan
+* Profil Pengguna
+* Pembuatan Kartu Tanda Anggota (KTA)
+
+</details>
+
+<details>
+<summary><strong>👤 Profil Pengguna</strong></summary>
+
+* Membuat profil pengguna
+* Mengubah dan memperbarui data profil
+
+</details>
+
+---
+
+## 🖼️ Screenshot Aplikasi
+
+<p align="center">
+  <img src="Screenshots/menuregister.jpeg" width="200" />
+  <img src="Screenshots/login.jpeg" width="200" />
+  <img src="Screenshots/dashboar.jpeg" width="200" />
+</p>
+
+<p align="center">
+  <img src="Screenshots/menukta+description.jpeg" width="200" />
+  <img src="Screenshots/menudrop.jpeg" width="200" />
+</p>
+
+<p align="center">
+  <img src="Screenshots/menuprofil.jpeg" width="200" />
+  <img src="Screenshots/menuprofil2.jpeg" width="200" />
+</p>
+
+> 📂 **Catatan:** Screenshot aplikasi secara lengkap dapat dilihat pada folder **Add File** yang tersedia di repository.
+
+---
+
+## 🚀 Cara Menjalankan Aplikasi
+
+### 💻 Melalui Android Studio
+
+1. Clone repository ini
+2. Buka project menggunakan **Android Studio**
+3. Jalankan aplikasi menggunakan **Emulator** atau **Device Android**
+
+---
+
+📱 Menjalankan Langsung di Android
+
+1. Buka aplikasi **SIAMOR_PMI**
+2. Akan muncul **Menu Login**
+3. Pilih:
+
+   * Login menggunakan **Google**, atau
+   * **Buat Akun Baru**
+4. Setelah berhasil login, pengguna akan diarahkan ke **Dashboard**
+5. Pada Dashboard tersedia beberapa menu utama:
+
+   * Anggota / Relawan
+   * Data Organisasi
+   * Pelaporan Kegiatan
+   * Profil Pengguna
+   * Pembuatan Kartu Tanda Anggota (KTA)
+6. Pada menu **Profil Pengguna**, pengguna dapat membuat dan mengubah profil
+7. Pada menu **Pembuatan KTA**, pengguna dapat:
+
+   * Mengisi data yang telah disediakan
+   * Membuat Kartu Tanda Anggota
+   * Mencetak KTA (fitur masih dalam tahap pengembangan)
+
+---
+
+## 📝 Penutup
+
+Aplikasi ini masih dalam tahap pengembangan dan dibuat sebagai bagian dari proses pembelajaran. Kritik dan saran sangat kami harapkan untuk pengembangan aplikasi ini ke depannya.
+
+⭐ *Terima kasih telah melihat dan mencoba aplikasi kami!*
