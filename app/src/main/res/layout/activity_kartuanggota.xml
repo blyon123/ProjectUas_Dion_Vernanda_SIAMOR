@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8D021F"
+    tools:context=".KartuAnggotaActivity"
+    tools:ignore="ExtraText"> <!-- Tambahan pengaman global -->
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/headerKta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBackKta"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Kembali"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Formulir KTA Relawan"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerKta">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="24dp">
+
+                <!-- 1. NIK -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D3D3D3"
+                    android:textColorHint="#000000"
+                    android:hint="No Induk Kependudukan (NIK)"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNik"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- 2. Tempat & Tanggal Lahir -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="12dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000"
+                        android:background="#D3D3D3"
+                        android:hint="Tempat Lahir"
+                        android:layout_marginEnd="8dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTempatLahir"
+                            android:textColor="#000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="#D3D3D3"
+                        android:textColorHint="#000000"
+                        android:hint="Tanggal Lahir">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTglLahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:focusable="false"
+                            android:clickable="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <!-- 3. Agama & Jenis Kelamin -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutAgama"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Agama"
+                        android:background="#D3D3D3"
+                        android:textColorHint="#000000"
+                        android:layout_marginEnd="8dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spAgama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:labelFor="@id/layoutAgama"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutGender"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#D3D3D3"
+                        android:textColorHint="#000000"
+                        android:layout_height="wrap_content"
+                        android:hint="Jenis Kelamin">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:labelFor="@id/layoutGender"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <!-- 4. No Handphone -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D3D3D3"
+                    android:textColorHint="#000000"
+                    android:hint="No Handphone"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etHpKta"
+                        android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/labelAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- 5. Provinsi & Kab/Kota -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutProvinsi"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="Provinsi"
+                        android:background="#D3D3D3"
+                        android:textColorHint="#000000"
+                        android:layout_marginEnd="8dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spProvinsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:labelFor="@id/layoutProvinsi"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layoutKabupaten"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#D3D3D3"
+                        android:textColorHint="#000000"
+                        android:layout_height="wrap_content"
+                        android:hint="Kab/Kota">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/spKabupaten"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:labelFor="@id/layoutKabupaten"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <!-- 6. Foto Upload Area -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto Anggota"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+
+                <!-- Kontainer Kartu yang akan Dilihat & Diunduh -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardKTA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Header PMI -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/logoPmi"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/logopmi1" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/logoPmi"
+                                android:layout_marginStart="10dp"
+                                android:text="Palang Merah\nIndonesia"
+                                android:textStyle="bold"
+                                android:textColor="#000000" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="Kartu Bukti Pendaftaran Relawan"
+                                android:textSize="10sp"
+                                android:textStyle="italic" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FF0000"
+                            android:layout_marginTop="8dp"/>
+
+                        <!-- Foto & Barcode -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="12dp">
+                            <ImageView
+                                android:id="@+id/imgFotoKtaPreview"
+                                android:layout_width="90dp"
+                                android:layout_height="110dp"
+                                android:scaleType="centerCrop"
+                                android:background="#EEEEEE"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="15dp">
+
+                                <ImageView
+                                    android:id="@+id/imgBarcodePreview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:src="@android:drawable/btn_dialog" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Tabel Data -->
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:stretchColumns="1">
+                            <TableRow android:padding="4dp">
+                                <TextView android:text="NOMOR REGISTRASI" android:textSize="11sp" android:textStyle="bold"/>
+                                <TextView android:id="@+id/txtKtaNik" android:text=" : -" android:textSize="11sp"/>
+                            </TableRow>
+                            <TableRow android:padding="4dp">
+                                <TextView android:text="NAMA" android:textSize="11sp" android:textStyle="bold"/>
+                                <TextView android:id="@+id/txtKtaNama" android:text=" : -" android:textSize="11sp"/>
+                            </TableRow>
+                            <TableRow android:padding="4dp">
+                                <TextView android:text="PMI PROVINSI" android:textSize="11sp" android:textStyle="bold"/>
+                                <TextView android:id="@+id/txtKtaProv" android:text=" : -" android:textSize="11sp"/>
+                            </TableRow>
+                            <!-- Tambahkan baris lain sesuai kebutuhan -->
+                        </TableLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Tombol Aksi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="16dp">
+
+                </LinearLayout>
+
+                <!-- 7. Tombol Simpan -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnUploadFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#F5F5F5"
+                    app:cardCornerRadius="12dp"
+                    app:strokeColor="#DDDDDD"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgPreviewKta"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="Preview Foto"
+                            android:src="@android:drawable/ic_menu_gallery"
+                            android:scaleType="centerCrop"
+                            app:tint="#8D021F" />
+                        <!-- Catatan: app:tint akan membuat foto berwarna merah,
+                             sebaiknya hapus baris tint ini jika ingin foto berwarna asli -->
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Klik untuk Upload Foto" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSimpanKta"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="CETAK KARTU ANGGOTA"
+                    android:layout_marginTop="32dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="#8D021F"
+                    android:textStyle="bold"
+                    app:cornerRadius="15dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SIAMOR_PMI</string>
+    <string name="database_name">siamo_pmi.db</string>
+    <integer name="database_version">1</integer>
+    <string name="table_anggota">anggota</string>
+    <string name="table_organisasi">organisasi</string>
+    <string name="table_kegiatan">kegiatan</string>
+    <string name="column_id">id</string>
+    <string name="column_nama">nama</string>
+    <string name="column_jabatan">jabatan</string>
+    <string name="column_unit">unit</string>
+    <string name="column_nama_unit">nama_unit</string>
+    <string name="column_ketua">ketua</string>
+    <string name="column_nama_kegiatan">nama_kegiatan</string>
+    <string name="column_tanggal">tanggal</string>
+    <string name="column_keterangan">keterangan</string>
+    <string name="column_username">username</string>
+    <string name="column_password">password</string>
+    <string name="Data_Anggota">Data Anggota</string>
+    <string name="Data_Organisasi">Data Organisasi</string>
+    <string name="Pelaporan_Kegiatan">Pelaporan Kegiatan</string>
+    <string name="Manajemen_Anggota">Manajemen Anggota</string>
+    <string name="desc_anggota">Kelola data relawan &amp; anggota PMI</string>
+    <string name="judul_organisasi">Pendataan Organisasi PMI</string>
+    <string name="hint_unit">Nama Unit PMI</string>
+    <string name="hint_ketua">Nama Ketua</string>
+    <string name="btn_simpan_org">SIMPAN DATA ORGANISASI</string>
+    <string name="hint_keterangan">Keterangan</string>
+    <string name="judul_kegiatan">Pelaporan Kegiatan PMI</string>
+    <string name="hint_unit_kegiatan">Nama Unit PMI</string>
+    <string name="hint_ketua_kegiatan">Nama Ketua</string>
+    <string name="btn_simpan_kegiatan">SIMPAN DATA KEGIATAN</string>
+    <string name="hint_nama_kegiatan">Nama Kegiatan</string>
+    <string name="hint_tanggal">Tanggal</string>
+    <string name="hint_keterangan_kegiatan">Keterangan</string>
+    <string name="btn_simpan">SIMPAN</string>
+    <string name="btn_batal">BATAL</string>
+    <string name="image">IMAGE</string>
+    <string name="menu_anggota">Anggota &amp; Relawan</string>
+    <string name="golonganDarah">Golongan Darah"</string>
+
+
+</resources>
