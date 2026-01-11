@@ -62,23 +62,10 @@ Aplikasi ini bertujuan untuk membantu pengelolaan data anggota, relawan, serta p
 
 ## 🖼️ Screenshot Aplikasi
 
-<p align="center">
-  <img src="Screenshots/menuregister.jpeg" width="200" />
-  <img src="Screenshots/login.jpeg" width="200" />
-  <img src="Screenshots/dashboar.jpeg" width="200" />
-</p>
+|   GAMBAR                                                                                                     |**KETERANGAN** | 
+|![alt text](https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/login.jpeg?raw=true)        |Tampilan Login | 
+|![alt text](https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menudrop.jpeg?raw=true)     | Menu drop     | 
 
-login.jpeg
-
-<p align="center">
-  <img src="Screenshots/menukta+description.jpeg" width="200" />
-  <img src="Screenshots/menudrop.jpeg" width="200" />
-</p>
-
-<p align="center">
-  <img src="Screenshots/menuprofil.jpeg" width="200" />
-  <img src="Screenshots/menuprofil2.jpeg" width="200" />
-</p>
 
 > 📂 **Catatan:** Screenshot aplikasi secara lengkap dapat dilihat pada folder **Add File** yang tersedia di repository.
 
