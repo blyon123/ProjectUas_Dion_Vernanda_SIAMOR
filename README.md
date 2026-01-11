@@ -18,13 +18,13 @@
    - golongan darah
    - 
 4. Screenshot aplikasi
-    <img src="screenshots/menuregister.jpeg" width="200">
-    <img src="screenshots/login.jpeg" width="200">
-    <img src="screenshots/dashboar.jpeg" width="200">
-    <img src="screenshots/menukta+description.jpeg" width="200">
-    <img src="screenshots/menudrop.jpeg" width="200">
-    <img src="screenshots/menuprofil.jpeg" width="200">
-    <img src="screenshots/menuprofil2.jpeg" width="200">
+    <img src="Screenshots/menuregister.jpeg" width="200">
+    <img src="Screenshots/login.jpeg" width="200">
+    <img src="Screenshots/dashboar.jpeg" width="200">
+    <img src="Screenshots/menukta+description.jpeg" width="200">
+    <img src="Screenshots/menudrop.jpeg" width="200">
+    <img src="Screenshots/menuprofil.jpeg" width="200">
+    <img src="Screenshots/menuprofil2.jpeg" width="200">
  
 
 5. Cara menjalankan aplikasi
