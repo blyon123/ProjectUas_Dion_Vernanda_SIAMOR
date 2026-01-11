@@ -6,22 +6,21 @@ plugins {
 
 android {
     namespace = "com.example.projectuas"
-    compileSdk = 36 // Disarankan menggunakan 35 (Android 15) karena SDK 36 masih sangat baru/preview
+    // Penyesuaian: Gunakan SDK 35 (Android 15) karena SDK 36 masih tahap Preview/Experimental
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.projectuas"
         minSdk = 24
-        targetSdk = 36 // Samakan dengan compileSdk
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // Perbaikan: Cara mengaktifkan ViewBinding yang benar dan efisien
     buildFeatures {
         viewBinding = true
-
     }
 
     buildTypes {
@@ -45,12 +44,17 @@ android {
 }
 
 dependencies {
+    // Gunakan library dari Version Catalog (libs) jika tersedia
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.database)
+
+    // Library untuk Google Login & Firebase Auth
+    implementation("com.google.firebase:firebase-auth-ktx:23.1.0")
+    implementation("com.google.android.gms:play-services-auth:21.3.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

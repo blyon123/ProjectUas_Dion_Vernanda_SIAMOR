@@ -38,6 +38,8 @@
     <string name="image">IMAGE</string>
     <string name="menu_anggota">Anggota &amp; Relawan</string>
     <string name="golonganDarah">Golongan Darah"</string>
+    <string name="default_web_client_id">PASTE_CLIENT_ID_ANDA_DISINI</string>
+
 
 
 </resources>
