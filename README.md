@@ -61,10 +61,30 @@ Aplikasi ini bertujuan untuk membantu pengelolaan data anggota, relawan, serta p
 ---
 
 ## 🖼️ Screenshot Aplikasi
+                                                                                                 
+<div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center">
 
-|   GAMBAR                                                                                                     |**KETERANGAN** | 
-|![alt text](https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/login.jpeg?raw=true)        |Tampilan Login | 
-|![alt text](https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menudrop.jpeg?raw=true)     | Menu drop     | 
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/login.jpeg?raw=true"
+     width="250"
+     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menudrop.jpeg?raw=true"
+     width="250"
+     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menukta%2Bdescription.jpeg?raw=true"
+     width="250"
+     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/menuprofil.jpeg?raw=true"
+     width="250"
+     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+<img src="https://github.com/blyon123/ProjectUas_Dion_Vernanda_SIAMOR/blob/main/dataorganisasi.jpeg?raw=true"
+     width="250"
+     style="border:1px solid #ddd; border-radius:12px; padding:5px; box-shadow:0 4px 10px rgba(0,0,0,.15);">
+
+</div>
 
 
 > 📂 **Catatan:** Screenshot aplikasi secara lengkap dapat dilihat pada folder **Add File** yang tersedia di repository.
